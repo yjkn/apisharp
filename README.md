@@ -31,11 +31,14 @@ APISharp 是一个全面的 API 测试平台，专为开发者和测试人员设
 
 ## 当前交付内容
 
-当前仓库处于初始化阶段，本次提交补充了：
+当前仓库已完成首版多模块代码骨架，本次提交补充了：
 
-- 项目目标、技术架构与模块边界说明。
-- 初始需求 Review，用于明确项目范围、风险和设计建议。
-- 初始 TodoList，用于跟踪后续模块拆分、核心能力开发和验证工作。
+- Maven 父工程与四个子模块。
+- `apisharp-core` 中的 API、测试用例、测试任务领域模型，以及合规性检查和 Markdown 文档生成能力。
+- `apisharp-service` 中的 API 注册、合规性 Review、文档生成、测试用例和测试任务管理接口。
+- `apisharp-actuator` 中的测试执行入口和 JMeter 测试计划生成能力。
+- `apisharp-maven-plugin` 中的 `apisharp:review` 目标，用于在 Maven `verify` 阶段执行 API 合规性检查并生成文档。
+- 初始需求 Review 和 TodoList，用于持续跟踪后续实现。
 
 详细内容见：
 
