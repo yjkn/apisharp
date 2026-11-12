@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: apisharp-actuator
+server:
+  port: 8081
